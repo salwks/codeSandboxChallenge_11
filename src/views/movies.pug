@@ -1,0 +1,11 @@
+extends layout/main
+include mixins/movieBlock
+
+block content
+  h2 Hell Yea!
+  .movies
+    each item in getMovies()
+      +movieBlock({
+        title:item.title,
+        summary:item.summary
+      })

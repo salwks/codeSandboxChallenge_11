@@ -1,0 +1,5 @@
+mixin movieBlock(movie = {})
+  .movieBlock
+    a(href= routes.detail(movie.id))
+      h3.movieBlock_title=movie.title
+      p.movieBlock_summary=movie.summary
